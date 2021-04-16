@@ -51,8 +51,7 @@ searchBtn.addEventListener('click', () => {
                     item3.className = 'item'
                     item3.innerHTML = `<p>Set date-time: <br> <br>${convert(set)}</p>`
                     details.append(item3)
-
-            })
+        })
     })
 })
 
