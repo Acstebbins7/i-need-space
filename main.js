@@ -4,7 +4,7 @@ searchBtn.addEventListener('click', () => {
     const addressInput = document.querySelector('#address').value
     const address = encodeURI(addressInput)
     console.log(address)
-
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
     const mapBoxUrl = `https://api.mapbox.com/geocoding/v5/mapbox.places/${address}.json?access_token=${apiInput}`
     fetch(mapBoxUrl)
         .then(raw => raw.json())
@@ -15,7 +15,7 @@ searchBtn.addEventListener('click', () => {
             console.log(longitude, latitude)
             const norad = document.querySelector('#norad').value
             const noradUrl = `https://satellites.fly.dev/passes/${norad}?lat=${latitude}&lon=${longitude}&limit=1&days=15&visible_only=true`
-
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
             fetch(noradUrl)
                 .then(rawData => rawData.json())
                 .then(data => {
@@ -30,23 +30,23 @@ searchBtn.addEventListener('click', () => {
                 
                     const detailsContainer = document.querySelector('.details-container')
                     detailsContainer.className = 'section details-container'
-
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
                     const details = document.querySelector('#detailed-info')
                     const heading = document.createElement('h2')
                     heading.className = 'row'
-                    heading.innerText = 'Dates & times of the Apocalypse'
+                    heading.innerText = 'Dates & times'
                     details.append(heading)
-
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
                     const item1 = document.createElement('div')
                     item1.className = 'item'
                     item1.innerHTML = `<p>Culminate date-time: <br> <br>${convert(culminate)}</p>`
                     details.append(item1)
-
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
                     const item2 = document.createElement('div')
                     item2.className = 'item'
                     item2.innerHTML = `<p>Rise date-time: <br> <br>${convert(rise)}</p>`
                     details.append(item2)
-
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
                     const item3 = document.createElement('div')
                     item3.className = 'item'
                     item3.innerHTML = `<p>Set date-time: <br> <br>${convert(set)}</p>`
@@ -54,7 +54,7 @@ searchBtn.addEventListener('click', () => {
         })
     })
 })
-
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 const newSearchBtn = document.querySelector('#new-search')
 newSearchBtn.addEventListener('click', () => {
     let apiInput = document.querySelector('#api-key')
