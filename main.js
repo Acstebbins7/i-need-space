@@ -1,10 +1,7 @@
 const searchBtn = document.querySelector('#search')
 searchBtn.addEventListener('click', () => {
-    //grab the input fields
     const apiInput = document.querySelector('#api-key').value
     const addressInput = document.querySelector('#address').value
-    
-    //encode the address 
     const address = encodeURI(addressInput)
     console.log(address)
 
