@@ -1,6 +1,7 @@
 * {
   font-family: "Roboto", sans-serif;
   color: #03045e;
+  font-weight: bold;
 }
 
 body {
@@ -50,6 +51,7 @@ h2 {
   line-height: 24px;
   text-align: center;
   justify-content: space-between;
+  /* border: 1px solid black; */
 }
 
 .row div {
@@ -161,4 +163,6 @@ table * {
 
 #detailed-info {
   width: fit-content;
+  margin: 8px;
+  padding: 4px;
 }

@@ -34,22 +34,22 @@ searchBtn.addEventListener('click', () => {
                     const details = document.querySelector('#detailed-info')
                     const heading = document.createElement('h2')
                     heading.className = 'row'
-                    heading.innerText = 'Dates & times'
+                    heading.innerText = 'Satellite Visibility Dates & Times'
                     details.append(heading)
 // $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
                     const item1 = document.createElement('div')
                     item1.className = 'item'
-                    item1.innerHTML = `<p>Culminate date-time: <br> <br>${convert(culminate)}</p>`
+                    item1.innerHTML = `<p>Culminate Date & Time: <br> <br>${convert(culminate)}</p><br>`
                     details.append(item1)
 // $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
                     const item2 = document.createElement('div')
                     item2.className = 'item'
-                    item2.innerHTML = `<p>Rise date-time: <br> <br>${convert(rise)}</p>`
+                    item2.innerHTML = `<p>Rise Date & Time: <br> <br>${convert(rise)}</p><br>`
                     details.append(item2)
 // $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
                     const item3 = document.createElement('div')
                     item3.className = 'item'
-                    item3.innerHTML = `<p>Set date-time: <br> <br>${convert(set)}</p>`
+                    item3.innerHTML = `<p>Set Date & Time: <br> <br>${convert(set)}</p><br>`
                     details.append(item3)
         })
     })
